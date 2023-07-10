@@ -5,6 +5,7 @@ window.onload = function () {
   const car = document.querySelector(".car");
   const track = document.querySelector(".track");
   const wheel = document.querySelectorAll(".wheel>img");
+  let mobileVersion = window.matchMedia("(max-width: 600px)");
 
   const audio = document.createElement("audio");
   audio.setAttribute("src", "sound.mp3");
@@ -17,7 +18,13 @@ window.onload = function () {
     track.style.animation = "carMove linear 6s infinite";
     trees.style.animation = "shakebody linear 6s infinite";
     car.style.animation = "carShake linear 3s infinite";
-    car.style.left = "444px";
+    mobileVersion.addEventListener("change", function () {
+      if (mobileVersion.matches) {
+        car.style.left = "40px";
+      } else {
+        car.style.left = "333px";
+      }
+    });
     audio.loop = true;
     audio.play();
   });
