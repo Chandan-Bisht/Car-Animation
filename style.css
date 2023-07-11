@@ -96,6 +96,9 @@ body{
     .start-btn {
         width: 20%;
     }
+    .car {
+        left: 333px;
+    }
 }
 
 @media only screen and (max-width: 1024px){
@@ -104,6 +107,7 @@ body{
     }
     .car {
         left: 130px;
+        bottom: 152px;
     }
     .track {
         top: 70vh;
@@ -126,7 +130,7 @@ body{
     .trees {
         bottom: 200px;
     }
-    .car {
+    .car{
         left: 0;
     }
     .track {
@@ -138,19 +142,19 @@ body{
 }
 @media only screen and (max-width: 320px){
     .car {
-        height: 50px;
+        height: 70px;
         left: 0;
         width: 100%;
     }
     .wheel1 img {
-        width: 50px;
+        width: 52px;
         top: 30px;
-        left: 35px;
+        left: 34px;
     }
     .wheel2 img {
-        width: 50px;
-        bottom: 25px;
-        left: 176px;
+        width: 56px;
+        bottom: 26px;
+        left: 173px;
     }
     .start-btn {
         width: 60%;
